@@ -11,17 +11,45 @@ body {
 /* ==== HEADER STYLE ==== */
 
 .cover {
-  background: url('assets/freedom.jpg') no-repeat center/cover;
+  background: url('assets/freedom.jpg') no-repeat center/cover ;
   color: #333;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 }
 
 .wrapper {
-  padding-top: 4rem;
+  padding-top: 3rem;
   text-align: center;
   margin: 0 auto;
   width: 90%;
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    padding-top: 6rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding-top: 6rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-top: 4rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    padding-top: 1rem;
+    width: 80%;
+  }
 }
 
 .quote {
@@ -29,7 +57,44 @@ body {
   font-size: 2.5rem;
 }
 
+@media (max-width: 1024px) {
+  .quote {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .quote {
+    font-size: 1.4rem;
+  }
+}
+
 .author {
   font-family: 'Crimson Text', serif;
   font-size: 1.5rem;
+  line-height: 0;
+}
+
+@media (max-width: 1024px) {
+  .author {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .author {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .author {
+    font-size: 1rem;
+  }
 }
